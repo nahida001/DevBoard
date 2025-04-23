@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="mb-6">
+        <nav class="mx-12">
+           <div class="navbar bg-base-100 shadow-sm px-4 rounded-lg">
+               <div class="flex-1">
+               <div class="flex">
+                   <img src="assets/logo.png" alt="nav-logo">
+                 <a class="btn btn-ghost text-2xl pt-2">Dev<span class="font-extrabold">Board</span></a>
+               </div>
+           </div>
+               <div class="flex-none" id="back-to-desk">
+                       <div class="card-actions ">
+                         <button class="btn btn-primary text-white rounded-lg p-4">Back to Desk</button>
+                   </div>
+                 </div>
+               </div>
+              </nav>
+           </header>
+        <section class="mx-12">
+            <h1 class="text-2xl text-black font-bold text-center mb-4">Blogs</h1>
+            <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+                <div class="collapse-content text-sm">There are several ways to select elements in the DOM (Document Object Model) using JavaScript. Here are the main ones:<br>
+                    1.By ID : document.getElementById("id")<br>
+                   2.By Class : document.getElementsByClassName("class")<br>
+                   3.By Tag : document.getElementsByTagName("tag")<br>
+                   4.By Name : document.getElementsByName("name")<br>
+                   5.CSS Selector (single) : document.querySelector("selector")<br>
+                  6.CSS Selector (all) : document.querySelectorAll("selector")<br>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+
+                </div>
+                <div class="collapse-content text-sm">innerHTML, innerText, and textContent are all properties used in JavaScript to get or set content inside HTML elements, but they behave differently. Here's a breakdown of the differences:<br>
+                   1. innerHTML: Gets/sets HTML code (includes tags).<br>
+
+                   2. innerText: Gets/sets visible text (ignores hidden content, slower).<br>
+                    
+                   3. textContent: Gets/sets all text (including hidden, faster than innerText).
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+                <div class="collapse-content text-sm">Event delegation is a technique where a parent element handles events from its child elements using a single event listener, often using event.target to identify the clicked child. It's efficient and works for dynamically added elements.</div>
+              </div>
+
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+                <div class="collapse-content text-sm">Event bubbling is when an event starts from the target element and bubbles up through its parent elements in the DOM hierarchy.
+
+                    For example, clicking a <button> inside a <div> will first trigger the button's handler, then the div's, and so on up to the <body>.</div>
+              </div>
+
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+                <div class="collapse-content text-sm">1.Create: const el = document.createElement("div");<br>
+
+                   2.Add: parent.appendChild(el);<br>
+                    
+                    3.Remove: el.remove();</div>
+              </div>
+        
+        </section>
+
+        <script src="./script/back.js"></script>
+   
+</body>
+</html>

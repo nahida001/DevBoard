@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>A5 Dev Board</title>
+</head>
+<body class="bg-[#F4F7FF]">
+    <!--navbar-->
+    <header class="mb-6">
+             <nav class="mx-12">
+                <div class="navbar bg-base-100 shadow-sm px-4 rounded-lg">
+                    <div class="flex-1">
+                    <div class="flex">
+                        <img src="assets/logo.png" alt="nav-logo">
+                      <a class="btn btn-ghost text-2xl pt-2">Dev<span class="font-extrabold">Board</span></a>
+                    </div>
+                </div>
+                    <div class="flex-none">
+                            <div class="card-actions ">
+                              <img class="pt-2" src="assets/checkbox.png" alt="">  <button id="navtask" class="btn text-black font-extrabold text-2xl rounded-full bg-sky-100 "> 23</button>
+                           <button><img src="assets/theme-btn.png" alt=""></button>
+                        </div>
+                      </div>
+                    </div>
+                   </nav>
+                </header>
+        <!--section part1-->
+      
+       <section>
+        <div class="grid grid-cols-[3fr_1fr] gap-4 mx-12">
+          <div class="space-y-4 bg-[F4F7FF]">
+            <div class="flex gap-4">
+              <!-- Card 1 -->
+              <div class="flex-1 bg-[F4F7FF] rounded-xl p-4 shadow flex items-center gap-4">
+                <button class="btn p-2 rounded-full bg-blue-100">
+                  <img src="assets/checkbox.png" class="w-6" alt="">
+                </button>
+                <div>
+                  <h2 class="font-semibold text-sm">Task Assigned</h2>
+                  <p id="task" class="text-2xl font-bold">05</p>
+                </div>
+              </div>
+      
+              <!-- Card 2 -->
+              <div id="Discover" class="flex-1 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-xl p-4 shadow flex items-center gap-4 text-white">
+                <img src="assets/board.png" class="w-6" alt="">
+                <h2 class="font-semibold text-lg">Discover Something New Today!</h2>
+              </div>
+      
+              <!-- Card 3 -->
+              <div class="flex-1 bg-[F4F7FF] rounded-xl p-4 shadow flex items-center gap-4">
+                <button class="btn p-2 rounded-full bg-blue-100">
+                  <img src="assets/calender.png" class="w-6" alt="">
+                </button>
+                <div >
+                  <h2 id="day" class="font-semibold text-sm">Wed</h2>
+                  <p id="current-date"  class="text-xl font-bold">Jul 28 2025</p>
+                </div>
+              </div>
+            </div>
+
+             <!--second section-->
+          <div class="flex gap-4 mt-10">
+            <!--card1-->
+             <div class="card bg-[F4F7FF] w-96 shadow-sm">
+              <div class="card-body">
+                <div class="card-actions justify-start ">
+                  <button class="btn rounded-lg">ShopEase</button>
+                </div>
+                <h2 class="card-title">Fix Mobile Button Issue </h2>
+                <p class="bg-white p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly</p>
+                  <div>
+                  <div class="justify-start">
+                    <p>Deadline</p>
+                    <h1 class="font-medium text-base font-semibold">21 March 2025</h1>
+                  </div>
+                  <div class="card-actions justify-end">
+                  <button id="task1" class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+              </div>
+            </div>
+
+             <!--card2-->
+             <div class="card bg-[F4F7FF] w-96 shadow-sm">
+              <div class="card-body">
+                <div class="card-actions justify-start ">
+                  <button class="btn rounded-lg">CloudSync</button>
+                </div>
+                <h2 class="card-title">Add Dark Mode</h2>
+                <p class="bg-white p-4">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                <div>
+                  <div class="justify-start">
+                    <p>Deadline</p>
+                    <h1 class="font-medium text-base font-semibold">21 March 2025</h1>
+                  </div>
+                  <div class="card-actions justify-end">
+                  <button id="task2" class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+              </div>
+            </div>
+
+             <!--card3-->
+             <div class="card bg-[F4F7FF] w-96 shadow-sm">
+              <div class="card-body">
+                <div class="card-actions justify-start ">
+                  <button class="btn rounded-lg">SwiftPay</button>
+                </div>
+                <h2 class="card-title">Optimize  Home page </h2>
+                <p class="bg-white p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly</p>
+                  <div>
+                    <div class="justify-start">
+                      <p>Deadline</p>
+                      <h1 class="font-medium text-base font-semibold">21 March 2025</h1>
+                    </div>
+                    <div class="card-actions justify-end">
+                    <button id="task3" class="btn btn-primary">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+          </div>
+
+
+          
+             <!--second section-->
+             <div class="flex gap-4">
+              <!--card1-->
+              <div class="card bg-[F4F7FF] w-96 shadow-sm">
+                <div class="card-body">
+                  <div class="card-actions justify-start ">
+                    <button class="btn rounded-lg">Meta</button>
+                  </div>
+                  <h2 class="card-title">Add new emoji 🤲 </h2>
+                  <p class="bg-white p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div>
+                    <div>
+                        <div class="justify-start">
+                          <p>Deadline</p>
+                          <h1 class="font-medium text-base font-semibold">21 March 2025</h1>
+                        </div>
+                        <div class="card-actions justify-end">
+                        <button id="task4" class="btn btn-primary">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+               <!--card2-->
+               <div class="card bg-[F4F7FF] w-96 shadow-sm">
+                <div class="card-body">
+                  <div class="card-actions justify-start ">
+                    <button class="btn rounded-lg">Google LLC</button>
+                  </div>
+                  <h2 class="card-title">Integrate OpenAI API  </h2>
+                  <p class="bg-white p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div>
+                      <div class="justify-start">
+                        <p>Deadline</p>
+                        <h1 class="font-medium text-base font-semibold">21 March 2025</h1>
+                      </div>
+                      <div class="card-actions justify-end">
+                      <button id="task5" class="btn btn-primary">Completed</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+               <!--card3-->
+               <div class="card bg-[F4F7FF] w-96 shadow-sm">
+                <div class="card-body">
+                  <div class="card-actions justify-start ">
+                    <button class="btn rounded-lg">Glassdoare</button>
+                  </div>
+                  <h2 class="card-title">Improve Job searching</h2>
+                  <p class="bg-white p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div>
+                      <div class="justify-start">
+                        <p>Deadline</p>
+                        <h1 class="font-medium text-base font-semibold">21 March 2025</h1>
+                      </div>
+                      <div class="card-actions justify-end">
+                      <button id="task6" class="btn btn-primary">Completed</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            
+            </div>
+  
+
+          </div>
+
+         
+            
+
+          <!--right side-->
+            <div class="bg-white rounded-xl p-4 shadow h-full">
+              <h2 class="font-semibold text-lg mb-4">Activity Log</h2>
+              <button class="btn btn-sm bg-red-100 text-red-500 mb-4">Clear History</button>
+              <div class="space-y-2 text-sm text-gray-600">
+                <p>You have completed the task Add Dark Mode at 12:48:15 PM</p>
+                <p>You have completed the task Add Dark Mode at 12:48:15 PM</p>
+              </div>
+            </div>
+          </div>
+ </section>
+   
+    <script src="./script/dis.js"></script>
+    <script src="./script/back.js"></script>
+    <script src="./script/date.js"></script>
+    <script src="./script/task.js"></script>
+    <script src="./script/navtask.js"></script>
+</body>
+</html>
